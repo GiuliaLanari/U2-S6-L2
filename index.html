@@ -13,36 +13,47 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-secondary-subtle" data-bs-theme="light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-md">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          <img src="./asses/LA-CLASSENSE-logo-orizzontale-per-web-generico.jpg" alt="logo" class="d-block object-fit-cover" width="20%">
+          <a class="navbar-brand" href="#">
+            <img height="50" src="./asses/LA-CLASSENSE-logo-orizzontale-per-web-generico.jpg" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="visually-hidden-focusable">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Saldi</a>
+                <a class="nav-link" href="#Saldi">Saldi</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Welcome Summer</a>
+                <a class="nav-link" href="#Welcome-Summer">Welcome Summer</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Last Minute</a>
+                <a class="nav-link" href="#Last-Minute">Last Minute</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Recensioni</a>
+                <a class="nav-link" href="#Recensioni">Recensioni</a>
               </li>
-              
-              
-            <form class="d-flex" role="search">
+            </ul>
+            <form class="d-flex my-2 my-lg-0" role="search">
               <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search" />
-              <button class="btn btn-outline-danger" type="submit">Cerca</button>
+              <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerca</button>
             </form>
           </div>
         </div>
@@ -50,169 +61,355 @@
     </header>
 
     <main>
-        <div class="container bg-body-secondary rounded-1 mt-5 ">
-            <div class="row">
-                <div class="col-12 ps-5 py-5">
-                    <h1 class="display-1 border-bottom pb-3">La Classense <span class="h4 fw-normal">-per viaggiatori dal 1970</span> </h1>
-                    <h4 class="fs-2 pt-3 pb-5 fst-italic">Scopri le destinazioni più calde del momento!</h4>
-                    <button class="btn btn-info btn-lg col-2 fw-bolder text-white" type="submit">Prenota ora</button>
-                </div>
+      <div class="container rounded-1 mt-5">
+        <div class="text-center text-lg-start bg-light rounded shadow-sm p-5 pt-4 mt-5">
+          <div class="row">
+            <div class="col-12 ps-5 py-5">
+              <h1 class="display-1 d-inline-block text-muted align-middle">
+                La Classense <span class="lead d-inline-block mb-0 align-middle">-per viaggiatori dal 1970</span>
+              </h1>
+              <h4 class="fs-3 fst-italic text-muted mb-5">Scopri le destinazioni più calde del momento!</h4>
+              <button class="btn btn-info btn-lg px-5 fw-bold text-light" type="submit">Prenota ora</button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+          <h3 class="fs-2" id="Saldi">Saldi</h3>
+          <button
+            class="btn btn-outline-info mb-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#saldi"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Nascondi Sezione
+          </button>
         </div>
 
+        <div class="row collapse show g-2 g-md-3 g-xl-5" id="saldi">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 border border-info">
+              <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia Florida" />
+              <div class="card-body">
+                <h5 class="card-title">Florida</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 border border-info">
+              <img src="./asses/tenerife.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia Tenerife" />
+              <div class="card-body">
+                <h5 class="card-title">Tenerife</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 border border-info">
+              <img src="./asses/hawaii.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia Hawaii" />
+              <div class="card-body">
+                <h5 class="card-title">Hawaii</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3 d-md-none d-lg-block">
+            <div class="card border border-2 border border-info">
+              <img src="./asses/zanzibar.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia Zanzibar" />
+              <div class="card-body">
+                <h5 class="card-title">Zanzibar</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+          <h3 class="fs-2" id="Welcome-Summer">Welcome Summer</h3>
+          <button
+            class="btn btn-outline-info mb-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#welcome-Summer"
+            aria-expanded="true"
+            aria-controls="collapseExample"
+          >
+            Nascondi Sezione
+          </button>
+        </div>
+
+        <div class="row collapse show g-2 g-md-3 g-xl-5" id="welcome-Summer">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2">
+            <div class="card border border-0 shadow-lg mb-5 bg-body rounded">
+              <img src="./asses/summer 1.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia tramonto" />
+              <div class="card-body">
+                <h5 class="card-title">Catania</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2">
+            <div class="card border border-0 shadow-lg mb-5 bg-body rounded">
+              <img src="./asses/Sicilia.avif" class="card-img-top w-100 object-fit-cover" alt="montagne Sicilia" />
+              <div class="card-body">
+                <h5 class="card-title">Sicilia</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2">
+            <div class="card border border-0 shadow-lg mb-5 bg-body rounded">
+              <img src="./asses/Africa.avif" class="card-img-top w-100 object-fit-cover" alt="tramonto Africa" />
+              <div class="card-body">
+                <h5 class="card-title">Africa</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2">
+            <div class="card border border-0 shadow-lg mb-5 bg-body rounded">
+              <img src="./asses/new.avif" class="card-img-top w-100 object-fit-cover" alt="New York" />
+              <div class="card-body">
+                <h5 class="card-title">New York</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2">
+            <div class="card border border-0 shadow-lg mb-5 bg-body rounded">
+              <img src="./asses/london.avif" class="card-img-top w-100 object-fit-cover" alt="Londra" />
+              <div class="card-body">
+                <h5 class="card-title">Londra</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2">
+            <div class="card border border-0 shadow-lg mb-5 bg-body rounded">
+              <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" />
+              <div class="card-body">
+                <h5 class="card-title">Florida</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum
+                  officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+          <h3 class="fs-2 d-none d-sm-block d-sm-none d-md-block">Offerta del giorno</h3>
+          <button
+            class="btn btn-outline-info mb-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#Offerta-day"
+            aria-expanded="true"
+            aria-controls="collapseExample"
+          >
+            Nascondi Sezione
+          </button>
+        </div>
+
+        <div class="row collapse show g-2 g-md-3 g-xl-5" id="Offerta-day">
+          <div class="d-none d-sm-block d-sm-none d-md-block col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+            <img
+              src="./asses/maldive.avif"
+              alt="spiaggia"
+              class="d-block object-fit-cover rounded shadow-sm p-3 mb-5 bg-body rounded"
+              width="100%"
+            />
+          </div>
+          <div class="d-none d-sm-block d-sm-none d-md-block col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <h2 class="display-4">Maldive</h2>
+            <p class="fs-6 font-monospace">25.03.2024-30.03.2024</p>
+            <p class="fs-4 lead">Villaggio a partite da 800£,</p>
+            <p class="fs-4 lead">non fartela sfugire!</p>
+            <a href="#" class="btn btn-dark btn-sm rounded-pill">Best offer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+          <h3 class="fs-2" id="Last-Minute">Last Minute</h3>
+          <button
+            class="btn btn-outline-info mb-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#last-minute"
+            aria-expanded="true"
+            aria-controls="collapseExample"
+          >
+            Nascondi Sezione
+          </button>
+        </div>
+
+        <div class="row collapse show g-2 g-md-3 g-xl-5" id="last-minute">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="./asses/Sicilia.avif" alt="Sicilia" class="w-100 object-fit-cover shadow mb-5 bg-body rounded" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="./asses/hawaii.avif" alt="spiaggia" class="w-100 object-fit-cover shadow mb-5 bg-body rounded" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img
+              src="./asses/tenerife.avif"
+              alt="spiaggia"
+              class="w-100 object-fit-cover shadow mb-5 bg-body rounded"
+            />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img
+              src="./asses/zanzibar.avif"
+              alt="spiaggia"
+              class="w-100 object-fit-cover shadow mb-5 bg-body rounded"
+            />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="./asses/Africa.avif" alt="Africa" class="w-100 object-fit-cover shadow mb-5 bg-body rounded" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="./asses/london.avif" alt="Londra" class="w-100 object-fit-cover shadow mb-5 bg-body rounded" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5 mb-5">
         <div class="container mt-5">
-            <h3  class="fs-2">Saldi</h3>
-            <div class="row">
+          <div class="d-flex justify-content-between">
+            <h3 class="fs-2 mb-2 text-center" id="Recensioni">Recenzioni</h3>
+            <button
+              class="btn btn-outline-info mb-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#recenzioni"
+              aria-expanded="true"
+              aria-controls="collapseExample"
+            >
+              Nascondi Sezione
+            </button>
+          </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                    <div class="card border border-2 border border-info">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
+          <div class="row collapse show g-2 g-md-3 g-xl-5" id="recenzioni"">
+          <div class="col-2 col-sm-2 col-md-1">
+            <img
+              src="./asses/omino.png"
+              alt="omino commento"
+              class="w-100 border border-info border-2 rounded-circle object-fit-cover"
+            />
+          </div>
+          <div class="col-10 col-sm-10 col-md-11 mb-4">
+            <p class="fw-semibold">Nome Utente</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sed aut voluptatem fugiat magnam,
+              possimus debitis ipsum reprehenderit libero molestiae, facere rerum deleniti repellendus consequatur! Amet
+              nemo eius neque adipisci.
+            </p>
+          </div>
 
+          <div class="col-2 col-sm-2 col-md-1">
+            <img
+              src="./asses/omino.png"
+              alt="omino commento"
+              class="w-100 border border-info border-2 rounded-circle object-fit-cover"
+            />
+          </div>
+          <div class="col-10 col-sm-10 col-md-11 mb-4">
+            <p class="fw-semibold">Nome Utente 2</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sed aut voluptatem fugiat magnam,
+              possimus debitis ipsum reprehenderit libero molestiae, facere rerum deleniti repellendus consequatur! Amet
+              nemo eius neque adipisci.
+            </p>
+          </div>
 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                    <div class="card border border-2 border border-info">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3"> 
-                    <div class="card border border-2 border border-info">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 d-md-none d-lg-block"> 
-                    <div class="card border border-2 border border-info">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="col-2 col-sm-2 col-md-1">
+            <img
+              src="./asses/omino.png"
+              alt="omino commento"
+              class="w-100 border border-info border-2 rounded-circle object-fit-cover"
+            />
+          </div>
+          <div class="col-10 col-sm-10 col-md-11">
+            <p class="fw-semibold">Nome Utente 3</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sed aut voluptatem fugiat magnam,
+              possimus debitis ipsum reprehenderit libero molestiae, facere rerum deleniti repellendus consequatur! Amet
+              nemo eius neque adipisci.
+            </p>
+          </div>
         </div>
-
-        <div class="container mt-5">
-            <h3  class="fs-2">Welcome Summer</h3>
-            <div class="row">
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2"> 
-                    <div class="card  border border-0">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2"> 
-                    <div class="card     border border-0">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2"> 
-                    <div class="card border border-0">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2"> 
-                    <div class="card border border-0">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2"> 
-                    <div class="card border border-0">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xxl-2"> 
-                    <div class="card border border-0">
-                        <img src="./asses/spiaggia.avif" class="card-img-top w-100 object-fit-cover" alt="spiaggia" >
-                        <div class="card-body">
-                            <h5 class="card-title">Florida</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ea? Quis maxime eveniet facere ipsum officia explicabo dolores, provident omnis ullam nostrum dolore in libero itaque vel unde. Ipsam, ex.</p>
-                            <a href="#" class="btn btn-info">Prenota</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container mt-5">
-            <h3  class="fs-2">Offerta del giorno</h3>
-            <div class="row">
-
-                <div class=".d-sm-none .d-md-block col-md-8 col-lg-8 col-xl-8 col-xxl-8"> 
-                    <img src="./asses/spiaggia.avif" alt="spiaggia" class="d-block object-fit-cover rounded shadow-sm p-3 mb-5 bg-body rounded" width="100%">
-                </div>
-                <div class=".d-sm-none .d-md-block col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <h2 class="display-4">Maldive</h2>
-                    <p class="fs-6 font-monospace">25.03.2024-30.03.2024</p>
-                    <p class="fs-4 lead">Villaggio a partite da 800£,</p>
-                    <p class="fs-4 lead">non fartela sfugire!</p>
-                    <a href="#" class="btn btn-dark btn-sm rounded-pill ">Best offer</a>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-      
+      </div>
     </main>
-    <footer>
-       
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="text-center pt-5 pb-5 mt-5">
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-outline-info">Contattaci</button>
+            </div>
+            <div class="col-12">
+              <p class="text-white pt-4">&copy;2024 La Classense</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script
